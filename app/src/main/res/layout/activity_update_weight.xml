@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/lblLog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/update_weight"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <TextView
+                android:id="@+id/lblWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/weight"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtUpdateW"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginRight="30dp"
+                android:autofillHints=""
+                android:inputType="numberDecimal"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+        <TextView
+            android:id="@+id/lblDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/date"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnUDtPicker"
+                style="?android:spinnerStyle"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/initial_date"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnUpdateW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/update"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/btnCancelUW"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="bottom"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:text="@string/cancel"
+        android:layout_gravity="center"/>
+</LinearLayout>

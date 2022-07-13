@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvProfile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/propic"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/propic" />
+
+    <ImageView
+        android:id="@+id/ivProfileAdd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/addimg"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/addimg" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/ProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnProfileSignOut"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/sign_out"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+
+        android:textSize="20sp"/>
+
+</LinearLayout>

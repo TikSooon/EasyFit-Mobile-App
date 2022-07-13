@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "805832809615",
+    "project_id": "easyfitapp-20c75",
+    "storage_bucket": "easyfitapp-20c75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805832809615:android:d15dc2b8fa519ed91fe4fa",
+        "android_client_info": {
+          "package_name": "com.example.easyfitapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805832809615-1uftv7ofirdebrsn39s6sjg49u9kride.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfcvQLDx8zxiztOu9QAe_-2jTdsOlT52k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805832809615-1uftv7ofirdebrsn39s6sjg49u9kride.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

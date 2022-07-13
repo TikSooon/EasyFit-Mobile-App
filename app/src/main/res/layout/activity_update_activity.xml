@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="20dp">
+
+    <TextView
+        android:id="@+id/lblLogA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/update_activity"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+        <RelativeLayout
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/lbldate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:text="@string/date"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnUADt"
+                style="?android:spinnerStyle"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/b">
+
+            <TextView
+                android:id="@+id/lblweight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/weight"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/txtaweightu"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:gravity="right"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="TextFields" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/c"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/lblset"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/number_of_sets"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/txtsetu"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:inputType="number"
+                android:layout_marginEnd="10dp"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp">
+            <TextView
+                android:id="@+id/lblrep"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/number_of_reps"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/txtrepu"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:inputType="number"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    <Button
+        android:id="@+id/btnUpdateA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/update"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/btnCancelU"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="bottom"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:text="@string/cancel"
+        android:layout_gravity="center"/>
+</LinearLayout>
